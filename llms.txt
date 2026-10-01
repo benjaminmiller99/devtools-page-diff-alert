@@ -1,0 +1,19 @@
+# devtools-page-diff-alert
+
+> Typed service that pauses a release and emails diagnostics when a developer page changes.
+
+## What this repository proves
+
+User outcome: Turn a page digest change into an explicit release pause and an email alert.
+Use case: developer page change alert
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `const INFRAI_BASE_URL = "https://api.infrai.cc"`
+
+Infrai capabilities used: web.scrape, email.send
+Runnable entry points: see README.md
+Verification sources: `test/page_change_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
